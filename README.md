@@ -122,7 +122,7 @@ Describe a diagram in plain English via GET and get a rendered image back. Power
 | `prompt` | query | string | ✅ | Describe your diagram in plain English (max 1000 chars). Be specific: mention the diagram type, key entities, and relationships. |
 | `diagram_type` | query | string (`mermaid`, `d2`, `plantuml`, `graphviz`) | — | Preferred diagram language. AI chooses if omitted. Examples: "mermaid", "d2", "plantuml", "graphviz". |
 | `output_format` | query | string (`svg`, `png`, `jpeg`, `pdf`) | — | Output format. Default: "svg". |
-| `share` | query | boolean (`false`, `true`) | — | Set share=true to persist the config and receive JSON instead of an image: { id, render_url, view_url, embed_url, expires_in }. Free plan: 3-day expiry. Paid plan: 6-month expiry. |
+| `share` | query | boolean | — | Set share=true to persist the config and receive JSON instead of an image: { id, render_url, view_url, embed_url, expires_in }. Free plan: 3-day expiry. Paid plan: 6-month expiry. |
 
 ### Python example
 
